@@ -1,32 +1,83 @@
-.banner {
-  height: 400px;
-  background-image:url(./assets/hero-bg.png);
-  /* বড় ব্যাকগ্রাউন্ড ইমেজ */
-  background-size: cover;
-  background-position: center;
+body {
+  background: #140522;
+  font-family: Arial, sans-serif;
+}
 
+.featured-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card */
+.featured-card {
+  background: #2a0f4f;
+  border-radius: 28px;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Video top */
+.video-box {
   position: relative;
+  height: 200px;
+}
 
+.video-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Play button */
+.play-btn {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 50px;
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* মাঝখানের wrapper */
-.center-wrapper {
-  position: relative;
+.video-box:hover .play-btn {
+  background: rgba(0, 0, 0, 0.55);
 }
 
-/* মাঝখানের বড় ইমেজ */
-.img-middle {
-  width: 200px;
+/* Content */
+.card-body {
+  padding: 24px;
 }
 
-/* তার উপরে আরেকটা ছোট ইমেজ */
-.img-small {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px;
+.card-body h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cfc6dd;
+}
+
+.duration {
+  display: inline-block;
+  margin-top: 14px;
+  color: #2bff88;
+  font-weight: 600;
 }
