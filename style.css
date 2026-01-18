@@ -1,24 +1,35 @@
-.inter-font{
+.inter-font {
   font-family: "Inter", sans-serif;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 /* shared classes */
-.container{
+.container {
   max-width: 75%;
   margin: 0 auto;
 }
-.section-color{
+
+.section-color {
   background-color: #1A0B2E;
 }
-.font-16{
-font-size: 1rem;
-color: #FFFFFF;
+
+.font-16 {
+  font-size: 1rem;
+  color: #FFFFFF;
 }
-.rgb-btn{
+
+.font-60 {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.rgb-btn {
   font-size: 16px;
   border-radius: 12px;
   border: navajowhite;
@@ -26,33 +37,120 @@ color: #FFFFFF;
   padding: 12px 16px 12px 16px;
   background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
   color: white;
+  text-align: center;
 }
+.rgb-btn:hover{
+  color:#F7E93F;
+  background: linear-gradient(45deg, #FB09B4 51%, #9100F8 100%);
+}
+
 /* header related style */
-header{
-  border-bottom: 1px solid #FB09B4;
+header {
+  border-bottom: 1px solid #fb09b251;
 }
-nav{
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo{
+.logo {
   font-size: 64px;
   font-weight: 800;
 }
-.tech{
+
+.tech {
   color: white
 }
-.logo .wave{
-color:#FB09B4 ;
+
+.logo .wave {
+  color: #FB09B4;
 }
+
 .blog {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
 }
-.blog a{
+
+.blog a {
   text-decoration: none;
+}
+
+/* hero section related style */
+#hero-section {
+  max-height: 700px;
+  background: url(./assets/hero-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+.hero-img{
+  position: relative;
+}
+.hero-img .img1{
+  width: 350px;
+}
+.hero-img .img2{
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+
+
+
+
+
+.hero-contant {
+  text-align: center;
+  margin: 40px auto;
+}
+.hero-contant h1{
+  margin-top: 20px;
+}
+.hero-contant p{
+  margin: 20px auto;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-btn1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 20px 12px 20px;
+}
+
+.hero-btn button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  color: white;
+  transition: 0.2s;
+}
+.hero-btn button:hover{
+  color: #F7E93F;
+  transform: scale(1.1);
+}
+
+.hero-btn2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #00FF88;
+  padding: 12px 20px 12px 20px;
+  background: none;
+  border: 1px solid #00FF88;
+  border-radius: 12px;
 }

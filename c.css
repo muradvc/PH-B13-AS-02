@@ -1,0 +1,32 @@
+.banner {
+  height: 400px;
+  background-image:url(./assets/hero-bg.png);
+  /* বড় ব্যাকগ্রাউন্ড ইমেজ */
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* মাঝখানের wrapper */
+.center-wrapper {
+  position: relative;
+}
+
+/* মাঝখানের বড় ইমেজ */
+.img-middle {
+  width: 200px;
+}
+
+/* তার উপরে আরেকটা ছোট ইমেজ */
+.img-small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+}
