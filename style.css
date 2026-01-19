@@ -477,12 +477,23 @@ nav {
 
   }
 
-  .choose-card {
-   
-  }
+  .choose-card {}
 
   .feature-card-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .host-contant .icon {
+    padding: 35px;
+    padding-top: 0px;
+    gap: 30px;
+  }
+  
 }
