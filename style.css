@@ -114,6 +114,32 @@ nav {
   position: absolute;
   top: 25%;
   left: 40%;
+  animation: spack 5s ease infinite;
+ 
+}
+
+@keyframes spack {
+  0% {
+
+    transform: scale(0.5);
+  }
+
+  25% {
+  
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 .hero-contant {
@@ -456,7 +482,9 @@ nav {
     width: 60px;
     top: 30%;
     left: 43%;
+
   }
+
 
   #hero-section {
     max-height: 450px;
