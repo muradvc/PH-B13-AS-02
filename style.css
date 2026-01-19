@@ -115,7 +115,7 @@ nav {
   top: 25%;
   left: 40%;
   animation: spack 5s ease infinite;
- 
+
 }
 
 @keyframes spack {
@@ -125,7 +125,7 @@ nav {
   }
 
   25% {
-  
+
     transform: scale(0.8);
   }
 
@@ -243,7 +243,10 @@ nav {
   background-color: #230E3D;
   padding: 120px;
 }
-
+.choose-container h1{
+  padding-bottom: 80px;
+  text-align: center;
+}
 .choose-card-all {
   display: grid;
   gap: 30px;
@@ -379,8 +382,6 @@ nav {
   padding: 40px;
   background-color: #250D44;
   border-radius: 20px;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 .host-card h3 {
