@@ -201,13 +201,13 @@ nav {
   padding-top: 50px;
   gap: 80px;
   place-items: center;
-  padding: 80px;
+ padding: 80px;
 }
 
 .rating-all h1 {
   color: #00FF88;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 3.8rem;
   margin-bottom: 20px;
 }
 
@@ -440,9 +440,25 @@ nav {
     background-position: center;
     position: relative;
   }
-    .about-contant h1{
-     padding-top: 30px;
-      margin-bottom: 10px;
-    }
+
+  .about-contant h1 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .rating-all {
+    grid-template-columns: repeat(2, 1fr);
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+  }
+
+  .rating-all h1 {
+    font-size: 40px;
+  }
 
 }
