@@ -496,9 +496,7 @@ nav {
     padding-bottom: 30px;
 
   }
-
-  .choose-card {}
-
+   
   .feature-card-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -507,17 +505,21 @@ nav {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    padding: 0 150px;
+    padding: 0 0px;
   }
 
   .host-contant .icon {
     padding: 0px;
-    padding-top: 0px;
-    padding-bottom: 20px;
+    padding-top: 10px;
   }
-
   .footer-contant {
     padding: 20px;
   }
-
+  .footer-img{
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-logo{
+   margin-bottom: 20px;
+  }
 }
