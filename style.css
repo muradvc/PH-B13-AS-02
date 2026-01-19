@@ -243,10 +243,12 @@ nav {
   background-color: #230E3D;
   padding: 120px;
 }
-.choose-container h1{
+
+.choose-container h1 {
   padding-bottom: 80px;
   text-align: center;
 }
+
 .choose-card-all {
   display: grid;
   gap: 30px;
@@ -323,17 +325,17 @@ nav {
   border-radius: 20px;
 }
 
-.video-box {
-  position: relative;
-  height: 150px;
-}
-
-.video-box img {
+.video-box iframe {
+  border-radius: 15px;
+  border: none;
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 10px;
+}
+
+.video-box {
+  position: relative;
+  height: 180px;
 }
 
 .card-body {
@@ -366,11 +368,6 @@ nav {
   font-size: 30px;
   background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
   transition: 0.5s ease;
-}
-
-.video-box p:hover {
-  color: #00FF88;
-  transform: scale(1.1);
 }
 
 /* host related style */
@@ -452,6 +449,7 @@ nav {
 }
 
 /* all section ended */
+
 @media screen and (max-width:576px) {
 
   .boro-display,
@@ -522,6 +520,10 @@ nav {
     padding-bottom: 30px;
 
   }
+  .choose-container h1{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
 
   .feature-card-container {
     grid-template-columns: repeat(1, 1fr);
@@ -539,8 +541,13 @@ nav {
     padding-top: 10px;
   }
 
+  .host-card .icon {
+    justify-content: center;
+  }
+
   .footer-contant {
-    padding: 20px;
+    padding: 10px;
+
   }
 
   .footer-img {
@@ -549,7 +556,7 @@ nav {
   }
 
   .footer-logo {
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 
   .choose-card-all {
@@ -557,6 +564,10 @@ nav {
     gap: 30px;
     flex-direction: column;
     padding-top: 30px;
+  }
+
+  #footer-section {
+    padding-bottom: 20px;
   }
 }
 
