@@ -401,6 +401,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 20px;
+
 }
 
 .footer-logo {
@@ -496,7 +497,7 @@ nav {
     padding-bottom: 30px;
 
   }
-   
+
   .feature-card-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -512,14 +513,24 @@ nav {
     padding: 0px;
     padding-top: 10px;
   }
+
   .footer-contant {
     padding: 20px;
   }
-  .footer-img{
+
+  .footer-img {
     flex-wrap: wrap;
     gap: 16px;
   }
-  .footer-logo{
-   margin-bottom: 20px;
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .choose-card-all {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding-top: 30px;
   }
 }
