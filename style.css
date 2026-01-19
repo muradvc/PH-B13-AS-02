@@ -486,10 +486,6 @@ nav {
     font-size: 40px;
   }
 
-  .choose-card-all {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0;
-  }
 
   #choose-section {
     padding: 0px;
@@ -501,12 +497,12 @@ nav {
   .feature-card-container {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  
   .host-card {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    padding: 0 0px;
+    padding: 50px 30px;
   }
 
   .host-contant .icon {
