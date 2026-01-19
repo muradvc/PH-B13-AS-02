@@ -147,7 +147,7 @@ nav {
   background: none;
   border: none;
   font-weight: 700;
-  color: white;
+  color: #00FF88;
   transition: 0.2s;
 }
 
@@ -216,11 +216,6 @@ nav {
 #choose-section {
   background-color: #230E3D;
   padding: 120px;
-}
-
-.choose-container h1 {
-  text-align: center;
-  margin-bottom: 80px;
 }
 
 .choose-card-all {
@@ -304,9 +299,12 @@ nav {
   height: 150px;
 }
 
-.video-box iframe {
-  border-radius: 10px;
+.video-box img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  border-radius: 10px;
 }
 
 .card-body {
@@ -338,7 +336,12 @@ nav {
   color: white;
   font-size: 30px;
   background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+  transition: 0.5s ease;
+}
 
+.video-box p:hover {
+  color: #00FF88;
+  transform: scale(1.1);
 }
 
 /* host related style */
@@ -463,8 +466,6 @@ nav {
   }
 
   .choose-card-all {
-    display: grid;
-    gap: 30px;
     grid-template-columns: repeat(1, 1fr);
     padding: 0;
   }
@@ -475,8 +476,13 @@ nav {
     padding-bottom: 30px;
 
   }
-  .choose-card{
+
+  .choose-card {
     width: 400px;
+  }
+
+  .feature-card-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 
 }
